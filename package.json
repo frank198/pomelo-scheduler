@@ -1,9 +1,65 @@
 {
-	"name": "pomelo-scheduler",
-	"version": "0.4.1",
+	"name": "pomelo-scheduler-upgrade",
+	"version": "1.0.0",
 	"main": "./lib/schedule",
-	"author": "XiaogangZhang <zhang0925@gmail.com>, fantasyni <fantasyni@163.com>",
 	"dependencies": {
-		"log4js": "0.6.7"
+		"log4js": ">=4.0.2"
+	},
+  "repository":{
+    "type": "git",
+    "url": "git+https://github.com/frank198/pomelo-scheduler.git"
+  },
+  "license": "MIT",
+  "eslintConfig": {
+		"extends": [
+			"eslint:recommended"
+		],
+		"parserOptions": {
+			"ecmaVersion": 2017
+		},
+		"env": {
+			"node": true,
+			"mocha": true,
+			"es6": true
+		},
+		"rules": {
+			"comma-style": "error",
+			"consistent-this": [
+				"error",
+				"_this"
+			],
+			"indent": [
+				"error",
+				4,
+				{
+					"SwitchCase": 1,
+					"VariableDeclarator": 2
+				}
+			],
+			"keyword-spacing": "error",
+			"no-buffer-constructor": "warn",
+			"no-console": "off",
+			"no-multi-spaces": "error",
+			"func-call-spacing": "error",
+			"no-trailing-spaces": "error",
+			"quotes": [
+				"error",
+				"single"
+			],
+			"semi": "error",
+			"space-before-blocks": "error",
+			"space-before-function-paren": [
+				"error",
+				"never"
+			],
+			"space-infix-ops": "error",
+			"space-unary-ops": "error",
+			"no-var": "warn",
+			"prefer-const": "warn",
+			"strict": [
+				"error",
+				"global"
+			]
+		}
 	}
 }
